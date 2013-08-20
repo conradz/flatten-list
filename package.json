@@ -1,0 +1,28 @@
+{
+  "name": "flatten-list",
+  "version": "0.0.0",
+  "description": "Flatten an array or array-like objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conradz/flatten-list.git"
+  },
+  "keywords": [
+    "array",
+    "flatten",
+    "flat",
+    "psuedo-array",
+    "array-like"
+  ],
+  "author": "Conrad Zimmerman <me@conradz.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/conradz/flatten-list/issues"
+  },
+  "devDependencies": {
+    "tap": "~0.4.4"
+  }
+}
