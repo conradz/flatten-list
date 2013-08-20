@@ -1,5 +1,8 @@
 # flatten-list
 
+[![Build Status](https://travis-ci.org/conradz/flatten-list.png)](https://travis-ci.org/conradz/flatten-list)
+[![Dependency Status](https://gemnasium.com/conradz/flatten-list.png)](https://gemnasium.com/conradz/flatten-list)
+
 Flatten an array or array-like objects.
 
 Reduces nested arrays or array-like objects (like `arguments` or `NodeList` in
