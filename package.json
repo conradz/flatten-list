@@ -1,6 +1,6 @@
 {
   "name": "flatten-list",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Flatten an array or array-like objects",
   "main": "index.js",
   "scripts": {
