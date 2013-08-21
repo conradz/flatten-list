@@ -1,5 +1,7 @@
 # flatten-list
 
+[![NPM](https://nodei.co/npm/flatten-list.png?compact=true)](https://nodei.co/npm/flatten-list/)
+
 [![Build Status](https://travis-ci.org/conradz/flatten-list.png)](https://travis-ci.org/conradz/flatten-list)
 [![Dependency Status](https://gemnasium.com/conradz/flatten-list.png)](https://gemnasium.com/conradz/flatten-list)
 
