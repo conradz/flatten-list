@@ -1,4 +1,4 @@
-var test = require('tap').test,
+var test = require('tape'),
     flatten = require('./');
 
 test('flatten a nested array', function(t) {
@@ -39,3 +39,33 @@ test('allow array-like objects', function(t) {
     t.deepEqual(flatten(value), [1, 2, 3]);
     t.end();
 });
+
+test('do not convert string to array', function(t) {
+    var value = 'foo';
+    t.deepEqual(flatten(value), [value]);
+    t.end();
+});
+
+test('allow falsy values', function(t) {
+    t.deepEqual(flatten(null), [null]);
+    t.deepEqual(flatten(false), [false]);
+    t.deepEqual(flatten(undefined), [undefined]);
+    t.deepEqual(flatten(''), ['']);
+    t.end();
+});
+
+if (typeof window !== 'undefined') {
+    // In a browser
+
+    test('do not convert elements to array', function(t) {
+        var value = document.createElement('form');
+        t.deepEqual(flatten(value), [value]);
+        t.end();
+    });
+
+    test('do not convert window to array', function(t) {
+        t.deepEqual(flatten(window), [window]);
+        t.end();
+    });
+
+}
